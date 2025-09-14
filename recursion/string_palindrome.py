@@ -9,4 +9,4 @@ class Solution:
                 return False
             return helper(l + 1, r - 1) 
 
-        return helper(0, len(filtered) - 1
+        return helper(0, len(filtered) - 1)
