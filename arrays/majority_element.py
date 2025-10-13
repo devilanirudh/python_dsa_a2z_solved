@@ -11,4 +11,22 @@ class Solution:
         return y
 
 
+# method-2 
+
+# moores voting algorithm
+# class Solution:
+#     def majorityElement(self, nums: List[int]) -> int:
+#         el=0
+#         count =0
+#         for i in range(len(nums)):
+#             if count ==0:
+#                 count=1
+#                 el=nums[i]
+#             elif nums[i]==el:
+#                 count = count+1
+#             else:
+#                 count = count-1
+#         return el
+
+        
         

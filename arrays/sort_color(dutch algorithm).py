@@ -18,3 +18,26 @@ class Solution:
         for i in range(count_0 + count_1, count_0 + count_1 + count_2):nums[i]=2
 
         
+
+# method 2
+
+# class Solution:
+#     def sortColors(self, nums: List[int]) -> None:
+#         """
+#         Do not return anything, modify nums in-place instead.
+#         """
+#         low =0
+#         mid=0
+#         high=len(nums)-1
+#         while(mid<=high):
+#             if nums[mid] == 0 :
+#                 nums[low],nums[mid]=nums[mid],nums[low]
+#                 low=low+1
+#                 mid=mid+1
+#             elif nums[mid] ==1:
+#                 mid=mid+1
+#             elif nums[mid] ==2:
+#                 nums[mid],nums[high]=nums[high],nums[mid]
+#                 high=high-1
+
+        
