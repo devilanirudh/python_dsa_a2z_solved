@@ -32,4 +32,4 @@ class Solution:
             res[0] = lb
             res[1] = ub - 1
 
-        return res
+        return re
