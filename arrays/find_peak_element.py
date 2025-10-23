@@ -12,5 +12,6 @@ class Solution:
             elif (nums[mid-1]<nums[mid]):i=mid+1
             else:j = mid-1
         return -1
-        
+
+        !
         
