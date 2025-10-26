@@ -13,5 +13,3 @@ class Solution:
             else:j = mid-1
         return -1
 
-
-        j
