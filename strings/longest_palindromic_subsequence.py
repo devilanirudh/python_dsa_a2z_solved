@@ -11,9 +11,8 @@ class Solution:
             nonlocal su
             for i in range(len(s)):
                 for j in range(i+1,len(s)+1):
-                    if len(s[i:j])>len(su):
-                        if is_palindrome(i,j-1):
-                            su = s[i:j]
+                    if (j-i)>len(su) and is_palindrome(i,j-1):
+                        su = s[i:j]
         
         sub_s(s)
         return su
