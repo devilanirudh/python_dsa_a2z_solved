@@ -43,6 +43,13 @@ def reverse_ll_nospace(head):
         temp = front
     return prev
 
+def reverse_a_ll_recursive(head):
+    if head==None or head.next == None:return head
+    newhead = reverse_a_ll_recursive(head.next)
+    front=head.next
+    front.next=head
+    head.next=None
+    return newhead
 
 
 arr = [1,2,3,4,5]
@@ -50,5 +57,7 @@ lis = arr2ll(arr)
 show(lis)
 # lis = reverse(lis)
 # show(lis)
-lis = reverse_ll_nospace(lis)
+# lis = reverse_ll_nospace(lis)
+# show(lis)
+lis = reverse_a_ll_recursive(lis)
 show(lis)
