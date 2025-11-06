@@ -1,4 +1,3 @@
-
 def hash(a):
     c = max(a)
     hash_d = [0]*(c+1)
