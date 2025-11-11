@@ -8,4 +8,4 @@ class Solution:
         result = [''.join(p) for p in itertools.product(*nums)]
 
         return result
-        
+         
