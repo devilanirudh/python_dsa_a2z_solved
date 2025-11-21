@@ -12,7 +12,7 @@ class Solution:
             # Case 1: No selected numbers are in this interval
             if b < start:
                 # pick the last two possible numbers inside this interval
-                a = end - 
+                a = end - 1
                 b = end
                 result += 2
 
